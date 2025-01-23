@@ -3,6 +3,7 @@ import {Button} from "@/components/ui/button";
 import {Progress} from "@/components/ui/progress";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {ProfilePicture} from "@/components/ProfilePicture.tsx";
+import TipsCard from "@/components/TipsCard.tsx";
 
 const normalize = (str: string) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -102,6 +103,7 @@ export function Game() {
                 <CardTitle className="text-center text-xl font-bold">Wordlo</CardTitle>
             </CardHeader>
             <CardContent>
+                <TipsCard></TipsCard>
                 <div className="flex items-center justify-between">
                     <span className="font-medium">Health:</span>
                     <Progress
